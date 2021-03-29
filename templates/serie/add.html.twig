@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+    <h2> Add a series</h2>
+    {{ form_start(serieForm) }}
+    {{ form_widget(serieForm) }}
+    <button type="submit"> Send!</button>
+    {{ form_end(serieForm) }}
+    {# todo : afficher la liste des séries #}
+{% endblock %}
+{% block title %} Add a serie!{{ parent() }}{% endblock %}
